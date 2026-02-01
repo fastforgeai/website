@@ -4,9 +4,9 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const navItems = [
-  { name: 'Product', href: '#product' },
-  { name: 'Solutions', href: '#solutions' },
-  { name: 'Why Us', href: '#testimonials' },
+  // { name: 'Product', href: '#product' },
+  // { name: 'Solutions', href: '#solutions' },
+  // { name: 'Why Us', href: '#testimonials' },
   // { name: 'Resources', href: '#resources' },
   // { name: 'About', href: '#about' },
 ];
@@ -49,9 +49,11 @@ export function Navbar() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button variant="hero" size="default">
-              Book a Demo
-            </Button>
+            <a href="https://calendar.app.google/XsfP5QhixQfy5LwMA">
+               <Button variant="hero" size="default">
+                Book a Demo
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -84,9 +86,11 @@ export function Navbar() {
                   {item.name}
                 </a>
               ))}
-              <Button variant="hero" size="default" className="w-full">
-                Book a Demo
-              </Button>
+              <a href="https://calendar.app.google/XsfP5QhixQfy5LwMA">
+                <Button variant="hero" size="default" className="w-full">
+                  Book a Demo
+                </Button>
+              </a>
             </div>
           </motion.div>
         )}

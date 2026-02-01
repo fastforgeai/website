@@ -33,10 +33,12 @@ export function CTASection() {
 
           {/* CTA */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-            <Button variant="hero" size="lg" className="group">
-              Book a Demo
-              <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
-            </Button>
+            <a href="https://calendar.app.google/XsfP5QhixQfy5LwMA">
+              <Button variant="hero" size="lg" className="group">
+                Book a Demo
+                <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+              </Button>
+            </a>
           </div>
 
           {/* Trust Text */}

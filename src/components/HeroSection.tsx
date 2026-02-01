@@ -60,10 +60,12 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <Button variant="hero" size="lg" className="group">
-              Book a Demo
-              <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
-            </Button>
+              <a href="https://calendar.app.google/XsfP5QhixQfy5LwMA">
+              <Button variant="hero" size="lg" className="group">
+                  Book a Demo
+                <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+              </Button>
+              </a>
           </motion.div>
         </div>
       </div>

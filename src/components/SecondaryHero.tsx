@@ -1,8 +1,21 @@
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import akamaiLogo from '@/assets/logos/akamai.png';
+import ciscoLogo from '@/assets/logos/cisco.png';
+import eyLogo from '@/assets/logos/ey.png';
+import lekConsultingLogo from '@/assets/logos/lek-consulting.png';
+import urbanCompanyLogo from '@/assets/logos/urban-company.png';
+
 
 const companies = ['Cisco', 'Urban Company', 'L.E.K. Consulting', 'EY', 'Akamai'];
+const logos = {
+  Cisco: ciscoLogo,
+  'Urban Company': urbanCompanyLogo,
+  'L.E.K. Consulting': lekConsultingLogo,
+  EY: eyLogo,
+  Akamai: akamaiLogo,
+}
 
 export function SecondaryHero() {
   return (
@@ -43,10 +56,12 @@ export function SecondaryHero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mb-16"
           >
-            <Button variant="outline" size="lg" className="group border-primary/50 hover:bg-primary/10">
-              Book a Demo
-              <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
-            </Button>
+            <a href="https://calendar.app.google/XsfP5QhixQfy5LwMA">
+               <Button variant="hero" size="lg" className="group border-primary/50">
+                Book a Demo
+                <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+              </Button>
+            </a>
           </motion.div>
 
           {/* Social Proof */}
@@ -66,7 +81,11 @@ export function SecondaryHero() {
                   key={company}
                   className="text-lg font-medium text-muted-foreground/60 hover:text-muted-foreground transition-colors"
                 >
-                  {company}
+                  <img
+                    src={logos[company]}
+                    alt={company}
+                    className="h-14 object-contain"
+                  />
                 </span>
               ))}
             </div>
