@@ -15,10 +15,10 @@ export function Footer() {
           {/* Logo & Description */}
           <div className="col-span-2 md:col-span-1">
             <a href="#" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-                <span className="font-display font-bold text-primary-foreground text-sm">P</span>
-              </div>
-              <span className="font-display font-semibold text-lg text-foreground">PLMflow</span>
+            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
+              <span className="font-display font-bold text-primary-foreground text-sm">F</span>
+            </div>
+            <span className="font-display font-semibold text-lg text-foreground">Fastforge</span>
             </a>
             <p className="text-sm text-muted-foreground">
               AI-native intelligence for PLM modernization.
@@ -48,7 +48,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © 2026 PLMflow. All rights reserved.
+            © 2026 Fastforge. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
